@@ -1,0 +1,4 @@
+CREATE OR REPLACE FUNCTION CALCBONUS(p_currentValue tyt_salarySum) RETURN number
+  PARALLEL_ENABLE
+  AGGREGATE USING a_salarySum;
+/
